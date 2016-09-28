@@ -1,0 +1,189 @@
+/* flex */
+body {
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	font-family: "trebuchet ms",sans-serif;
+	flex-flow: center;
+}
+header {
+	width: 100%;
+	background-color: white;
+	color: #00d66c;
+	display: inline;
+}
+nav {
+	width: 100%;
+}
+main {
+	width: 100%;
+}
+aside {
+	width: 100%;
+	min-height: 5em;
+}
+footer {
+	background-color: green;
+	width: 100%;
+}
+
+/* header */
+header>ul>a {
+	list-style: none;
+	padding: 0.1em;
+	color: #00d66c;
+	font-size: 1rem;
+}
+/* searchbox */
+form {
+position: relative;
+width: 100%;
+margin: 0 auto;
+height: 2.5em;
+border: 0.1em solid #999;
+border-radius: 0.5em;
+background-color: white;
+overflow: hidden;
+}
+input {
+font-size: 1em;
+color: #ddd;
+border-width: 0;
+background: transparent;
+}
+input[type=search] {
+width: 90%;
+padding: 11px 0 12px;
+text-align: center;
+}
+input[type=submit] {
+position: absolute;
+top: 0;
+right: 0;
+height: 42px;
+width: 80px;
+font-size: 14px;
+color: white;
+text-align: center;
+line-height: 42px;
+border-width: 0;
+background-color:#00d66c;
+border-radius: 0 0.1em 0.1em 0;
+cursor: pointer;
+}
+
+/* navigatie */
+nav {
+	color:#00d66c;
+}
+nav>ul {
+	display:flex;
+    flex-direction: row;
+}
+li {
+	width: 100%;
+	text-align: center;
+	list-style: none;
+}
+
+/* main */
+article {
+	padding: 1em;
+}
+
+
+/*overlay inlog scherm
+http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/
+*/
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	max-width: 22em;
+	position: relative;
+	margin: 10% auto;
+	padding: 0.4em 0.3em 0.4em 0.3em;
+	border-radius: 1em;
+	background: #fff;
+}
+
+/* aanmeldformulier */
+form {
+	border: 3px solid #f1f1f1;
+	width: auto;
+	height: auto;
+}
+input[type=text], input[type=password],input[type=email] {
+    width: 100%;
+    padding: 0.5em 1em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 1.2em;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+footer {
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  background-color: #efefef;
+  text-align: center;
+}
+/* breakpoint */
+@media only screen and (min-width : 40em) {
+	main {
+		max-width: 42em;
+	}
+	aside {
+		max-width: 25%;
+	}	
+	nav>ul {
+		display: inline-flex;
+		float: center;
+	}
+	li {
+		justify-content: center;
+		width: 75%;
+		list-style: none;
+		padding: 0.5em;
+	}
+}
+
+@media only screen and (min-width : 60em) {
+	body {
+		justify-content: center;
+	}
+	form {
+		width: 75%;
+	}
+	nav>ul {
+		transform: translateX(85%);
+	}
+	li {
+	}
+}

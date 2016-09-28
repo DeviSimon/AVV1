@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <title>flextest</title>
+        <link rel="stylesheet" href="css/flex.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    	<header>
+            <ul>
+                <a href="#">Hallo Devi</a>
+                <a href="#openModal">Uitloggen</a>
+    	   </ul>
+           <div id="openModal" class="modalDialog">
+                <div>
+                    <form>
+                         <fieldset>
+                            <legend>Inloggen</legend>
+                            <label>
+                                gebruikersnaam
+                            </label>
+                            <input type="text" name="username" placeholder="Gebruikersnaam" required>
+                            <label>
+                                wachtwoord
+                            </label>
+                            <input type="password" name="password" placeholder="wachtwoord" required>
+                        </fieldset>
+                        <button type="submit">Login</button>
+                        <fieldset>
+                            <legend>Aanmelden</legend>
+                            <label>
+                                Email
+                            </label>
+                            <input type="email" name="email" placeholder="email" required>
+                            <label>
+                                wachtwoord
+                            </label>
+                            <input type="password" name="text" placeholder="wachtwoord" required>
+                        </fieldset>
+                        <button type="submit">Aanmelden</button>
+                        <a class="gast" href="#">bezoeken als gast</a>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <form>
+                <input type="search" placeholder="Wat wilt u wilt lezen"/>
+                <input class="submit" type="submit" name="submit" value="Zoeken" />
+            </form>
+            <ul>
+                <li><a href="#">Filter</a></li>
+                <li><a href="#">Sorteren</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <header>
+                    <h1>Verassing</h1>
+                </header>
+                <p>- ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?’ – ‘Nah.</p>
+            </article>
+            <article>
+                <header>
+                    <h1>Beroemd</h1>
+                </header>
+                <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten.</p>
+            </article>
+            <article>
+                <header>
+                    <h1>Verassing</h1>
+                </header>
+                <p>- ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?’ – ‘Nah.</p>
+            </article>
+            <article>
+                <header>
+                    <h1>Beroemd</h1>
+                </header>
+                    <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten.</p>
+            </article>
+        </main>
+        <aside>
+            <h1>Populair</h1>
+                <article>
+                    <header>
+                        <h2>verhaal 1</h2>
+                    </header>
+                </article>
+                <article>
+                    <header>
+                        <h2>verhaal 2</h2>
+                    </header>
+                </article>
+                <article>
+                    <header>
+                        <h2>verhaal 3</h2>
+                    </header>
+                </article>
+        </aside>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </body>
+</html>
