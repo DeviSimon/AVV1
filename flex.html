@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>flextest</title>
         <link rel="stylesheet" href="css/flex.css">
+        <link rel="stylesheet" href="css/style-filter.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
@@ -15,7 +16,7 @@
            <div id="openModal" class="modalDialog">
                 <div>
                     <h1>
-                        Log hier in.
+                        Log in
                     </h1>
                     <form>
                          <fieldset>
@@ -30,6 +31,9 @@
                             <input type="password" name="password" placeholder="wachtwoord" required>
                         </fieldset>
                         <button type="submit">Login</button>
+                        <h1>
+                            Of meld je aan
+                        </h1>
                         <fieldset>
                             <legend>Aanmelden</legend>
                             <label>
@@ -52,35 +56,51 @@
                 <input type="search" placeholder="Wat wilt u wilt lezen"/>
                 <input class="submit" type="submit" name="submit" value="Zoeken" />
             </form>
-            <ul>
-                <li><a href="#">Filter</a></li>
-                <li><a href="#">Sorteren</a></li>
-            </ul>
         </nav>
         <main>
+            <ul>
+                <li>
+                    <a href="#">Filter</a>
+                </li>
+                <li>
+                    <a href="#">Sorteren</a>
+                </li>
+            </ul>
             <article>
                 <header>
-                    <h1>Verassing</h1>
+                    <h1><a href="verhaal1.html">Telegrafisch</a></h1>
                 </header>
-                <p>- ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?’ – ‘Nah.</p>
+                <p>BUS STOPT STOP NAAR BIBLIOTHEEK VOOR STIJLOEFENINGEN STOP VAN RAYMOND QUENEAU STOP REGEN EN WIND MENSEN IN ZICHZELF GEKEERD STOP MODDERIGE TERINGZOOI HIER STOP</p>
+                <footer>
+                    <p>6 Like's, geplaatst 16-9-16, <a href="#">2 reactie's</a></p>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h1><a href="verhaal2.html">Boers</a></h1>
+                </header>
+                <p>Ik stap dus op ut stationsplein in dieën groâte stad uut dieën bus, met mien zoân in zijne keierwoâguh. Mien zoân sloâpt.</p>
+                <footer>
+                    <p>8 Like's, geplaatst 15-9-16, <a href="#">3 reactie's</a></p>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <h1><a href="verhaal3.html">De verwarde man</a></h1>
+                </header>
+                    <p> De politie heeft dinsdag 2 februari een verwarde man aangehouden. Hij was op dat moment in een babywinkel op het Bos en Lommerplein bezig babyschoentjes te kopen.</p>
+                    <footer>
+                        <p>12 Like's, geplaatst 13-9-16, <a href="#">6 reactie's</a></p>
+                    </footer>
             </article>
             <article>
                 <header>
                     <h1>Beroemd</h1>
                 </header>
                 <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten.</p>
-            </article>
-            <article>
-                <header>
-                    <h1>Verassing</h1>
-                </header>
-                <p>- ‘Biertje dan maar?’ – ‘Graag.’ – ‘Vermoeiende dag?’ – ‘Nah.</p>
-            </article>
-            <article>
-                <header>
-                    <h1>Beroemd</h1>
-                </header>
-                    <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten.</p>
+                <footer>
+                        <p>16 Like's, geplaatst 10-9-16, <a href="#">7 reactie's</a></p>
+                    </footer>
             </article>
         </main>
         <aside>
@@ -89,16 +109,26 @@
                     <header>
                         <h2>verhaal 1</h2>
                     </header>
+                    <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten.</p>
+                    <footer>
+                        <p>32 Like's, <a href="#">16 reactie's</a></p>
+                </footer>
                 </article>
                 <article>
                     <header>
                         <h2>verhaal 2</h2>
                     </header>
+                    <footer>
+                        <p>32 Like's, <a href="#">16 reactie's</a></p>
+                </footer>
                 </article>
                 <article>
                     <header>
                         <h2>verhaal 3</h2>
                     </header>
+                    <footer>
+                        <p>32 Like's, <a href="#">16 reactie's</a></p>
+                </footer>
                 </article>
         </aside>
         <footer>

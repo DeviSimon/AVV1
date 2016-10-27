@@ -23,10 +23,6 @@ aside {
 	width: 100%;
 	min-height: 5em;
 }
-footer {
-	background-color: green;
-	width: 100%;
-}
 
 /* header */
 body>header {
@@ -83,10 +79,7 @@ cursor: pointer;
 }
 
 /* navigatie */
-nav {
-	color:#00d66c;
-}
-nav>ul {
+main>ul {
 	display:flex;
     flex-direction: row;
 }
@@ -100,6 +93,17 @@ li {
 article {
 	padding: 1em;
 }
+h1>a:visited {
+	text-decoration: none;
+	color: #2800a0;
+}
+h1>a:link {
+	text-decoration: none;
+	color: #00d66c;
+
+}
+article>footer {
+}
 
 /* Aside */
 aside>h1 {
@@ -111,6 +115,9 @@ aside>h1 {
 
 }
 
+ul.social {
+	float: right;
+}
 
 /*overlay inlog scherm
 http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/
@@ -146,9 +153,6 @@ http://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-c
 div>h1 {
 	text-align: center;
 }
-div>a {
-	color: #2800a0;
-}
 legend {
 	float: left;
 }
@@ -168,11 +172,12 @@ fieldset>label {
 }
 input[type=text], input[type=password],input[type=email] {
     width: 100%;
-    padding: 0.5em 1em;
+    padding: 0.5em 0.5em;
     margin: 0.5em 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 0.5em;
 }
 button {
     background-color: #4CAF50;
@@ -182,16 +187,19 @@ button {
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 2em;
 }
 
-
-footer {
+body>footer {
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1em;
   background-color: #efefef;
   text-align: center;
+}
+footer {
+	width: 100%;
 }
 
 /* breakpoint */
@@ -202,9 +210,9 @@ footer {
 	aside {
 		max-width: 25%;
 	}	
-	nav>ul {
+	main>ul {
 		display: inline-flex;
-		float: center;
+		max-width: 42em;
 	}
 	li {
 		justify-content: center;
