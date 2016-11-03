@@ -12,69 +12,74 @@
             <ul>
                 <a href="#">Hallo Devi</a>
                 <a href="#openModal">Uitloggen</a>
+                <a href="flex.html" ><img class="logo" src="img/icon175x175.png"></a>
     	   </ul>
+
            <div id="openModal" class="modalDialog">
+                <img src="img/Transavia_3.jpg" id="bg" alt="">
                 <div>
                     <h1>
-                        Log in
+                        Welkom!
                     </h1>
                     <form>
                          <fieldset>
-                            <legend>Inloggen</legend>
-                            <label>
-                                gebruikersnaam
-                            </label>
-                            <input type="text" name="username" placeholder="Gebruikersnaam" required>
-                            <label>
-                                wachtwoord
-                            </label>
-                            <input type="password" name="password" placeholder="wachtwoord" required>
+                            <legend>inloggen</legend>
+                            <label for="boekingsNummer">Boekingsnummer</label>
+                            <input id="boekingsNummer" placeholder="bijv. BRN123" required>
+                            <label for="achternaam">Achternaam</label>
+                            <input id="achternaam" placeholder="bijv. Simon" required>
+                            <img class="feedback">
+                            <button type="submit">Inloggen</button>
+                            <p class="gast" id="button">of bezoeken als gast</p>
                         </fieldset>
-                        <button type="submit">Login</button>
-                        <h1>
-                            Of meld je aan
-                        </h1>
-                        <fieldset>
-                            <legend>Aanmelden</legend>
-                            <label>
-                                Email
-                            </label>
-                            <input type="email" name="email" placeholder="email" required>
-                            <label>
-                                wachtwoord
-                            </label>
-                            <input type="password" name="text" placeholder="wachtwoord" required>
-                        </fieldset>
-                        <button type="submit">Aanmelden</button>
                     </form>
-                    <a class="gast" href="#">bezoeken als gast</a>
                 </div>
             </div>
         </header>
+        <figure>
+            <div class="banner">
+                
+            </div>
+        </figure>
         <nav>
             <form>
-                <input type="search" placeholder="Wat wilt u wilt lezen"/>
-                <input class="submit" type="submit" name="submit" value="Zoeken" />
+                <input type="text" placeholder="Wat wilt u wilt lezen?"/>
+                <input type="submit" name="submit" value="Zoeken" />
             </form>
         </nav>
         <main>
             <ul>
                 <li>
                     <a href="#">Filter</a>
+                    <select>
+                      <option value="volvo"><300 woorden</option>
+                      <option value="saab">>300 woorden</option>
+                      <option value="opel">Populariteit</option>
+                      <option value="audi">Relevantie</option>
+                    </select>
                 </li>
                 <li>
                     <a href="#">Sorteren</a>
+                    <select>
+                      <option value="volvo">Datum</option>
+                      <option value="saab">Woorden</option>
+                      <option value="opel">Populariteit</option>
+                      <option value="audi">Relevantie</option>
+                    </select>
                 </li>
             </ul>
+
             <article>
                 <header>
                     <h1><a href="verhaal1.html">Telegrafisch</a></h1>
                 </header>
                 <p>BUS STOPT STOP NAAR BIBLIOTHEEK VOOR STIJLOEFENINGEN STOP VAN RAYMOND QUENEAU STOP REGEN EN WIND MENSEN IN ZICHZELF GEKEERD STOP MODDERIGE TERINGZOOI HIER STOP</p>
                 <footer>
-                    <p>6 Like's, geplaatst 16-9-16, <a href="#">2 reactie's</a></p>
+                    <button class="later">Lees later</button>
+                    <p><span>6 Like's, geplaatst 16-9-16,</span> <a href="#">2 reactie's</a></p>
                 </footer>
             </article>
+
             <article>
                 <header>
                     <h1><a href="verhaal2.html">Boers</a></h1>
@@ -84,6 +89,7 @@
                     <p>8 Like's, geplaatst 15-9-16, <a href="#">3 reactie's</a></p>
                 </footer>
             </article>
+
             <article>
                 <header>
                     <h1><a href="verhaal3.html">De verwarde man</a></h1>
@@ -93,46 +99,91 @@
                         <p>12 Like's, geplaatst 13-9-16, <a href="#">6 reactie's</a></p>
                     </footer>
             </article>
+
             <article>
                 <header>
                     <h1>Beroemd</h1>
                 </header>
                 <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten.</p>
                 <footer>
-                        <p>16 Like's, geplaatst 10-9-16, <a href="#">7 reactie's</a></p>
-                    </footer>
+                    <p>16 Like's, geplaatst 10-9-16, <a href="#">7 reactie's</a></p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h1>voorbeeld</h1>
+                </header>
+                <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten.</p>
+                <footer>
+                    <p>16 Like's, geplaatst 10-9-16, <a href="#">7 reactie's</a></p>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h1>voorbeeld</h1>
+                </header>
+                <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten.</p>
+                <footer>
+                    <p>16 Like's, geplaatst 10-9-16, <a href="#">7 reactie's</a></p>
+                </footer>
             </article>
         </main>
+
         <aside>
             <h1>Populaire Verhalen</h1>
                 <article>
                     <header>
-                        <h2>verhaal 1</h2>
+                        <h2>Stijloefeningen (92) – Vergezocht</h2>
                     </header>
-                    <p>Vlak voordat ik de bus uitstap bedank ik de buschauffeur via de spiegel voor zijn diensten.</p>
+                    <p>Het was in de omstreken van een gure februaridag rond het middaguur. </p>
                     <footer>
                         <p>32 Like's, <a href="#">16 reactie's</a></p>
-                </footer>
+                    </footer>
                 </article>
+
                 <article>
                     <header>
-                        <h2>verhaal 2</h2>
+                        <h2>Stijloefeningen (76) – Gesponsord</h2>
                     </header>
+                        <p>Het regent pijpenstelen van het merk Dunhill en het waait flink als ik de bus van de GVB uitstapt. </p>
                     <footer>
-                        <p>32 Like's, <a href="#">16 reactie's</a></p>
-                </footer>
+                        <p>30 Like's, <a href="#">17 reactie's</a></p>
+                    </footer>
                 </article>
+
                 <article>
                     <header>
-                        <h2>verhaal 3</h2>
+                        <h2>Stijloefeningen (71) – Vrijdag de 13e</h2>
                     </header>
+                    <p>Bij het uitstappen van de bus waait mijn jas open, precies op het moment dat de buschauffeur de deuren sluit. </p>
                     <footer>
-                        <p>32 Like's, <a href="#">16 reactie's</a></p>
-                </footer>
+                        <p>25 Like's, <a href="#">12 reactie's</a></p>
+                    </footer>
                 </article>
         </aside>
         <footer>
             <p>Footer</p>
         </footer>
+        <!-- test (werkt niet) http://stackoverflow.com/questions/27633885/auto-run-javascript-code-on-page-load
+
+        <script type="text/javascript">
+            window.onload = function overlay(){
+                el = document.getElementById("openModal");
+                el.style.visibility = (el.style.visibility == "hidden") ? "hidden" : "hidden";
+            };
+        </script>
+        -->
+
+        <!--test 2
+        <script type="text/javascript">
+            window.onload = function () {
+                document.getElementById('button').onclick = function () {
+                    document.getElementById('openModal').style.display = "none"
+                };
+            };
+        </script>
+        -->
     </body>
 </html>
